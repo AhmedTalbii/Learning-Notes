@@ -24,7 +24,7 @@
 - `docker system prune`  
   Removes all stopped containers, unused images, volumes, networks
 
-- `docker image prune`
+- `docker image prune`  
   Removes all the <none> images
 
 - `docker container prune`  
@@ -32,3 +32,6 @@
 
 - `docker exec -it <ID> sh`  
   To enter the terminal of the container (i = --interactive, t = --terminal)
+
+- `docker rmi $(docker images -q)`  
+  Removes all the images by ID
