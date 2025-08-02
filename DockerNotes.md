@@ -1,6 +1,10 @@
 
 ## Docker Notes
 
+# Why docker was envented 
+
+**Docker was invented because at first there was a problem with hosting — if they wanted to host an app, they could do it on one server, but they couldn’t host two on the same server due to (security, conflicts, resource limits). That’s why they invented VMs, so they could run multiple OSs on a single server and host many apps based on hardware limits. Then they found a second problem: VMs use too many resources. That’s why they invented Docker to solve all those problems with something called containerization.**
+
 ```bash
 docker build -t <tag> .
 ```  
@@ -60,3 +64,8 @@ docker exec -it <ID> sh
 docker rmi $(docker images -q)
 ```  
 **`docker rmi`** removes all Docker images by ID.
+
+```bash
+docker inspect <image>
+```
+**`docker inspect`** To see all the meta data for the image.
