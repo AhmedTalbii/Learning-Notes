@@ -1,37 +1,62 @@
+
 ## Docker Notes
 
-- `docker build -t <tag> .`  
-  Build image from current dir, name it with `<tag>`
+```bash
+docker build -t <tag> .
+```  
+**`docker build`** builds an image from the current directory and names it with `<tag>`.
 
-- `docker run <image>`  
-  To run + turn image to container and its for the fast resultes programmes
+```bash
+docker run <image>
+```  
+**`docker run`** runs an image and creates a container, useful for quick tests.
 
-- `docker run -p 8080:8080 -d <image>`  
-  To run + turn image to container and its just for the listning programmes
+```bash
+docker run -p 8080:8080 -d <image>
+```  
+**`docker run -p`** maps ports and runs the container in detached mode (for listening services).
 
-- `docker ps`  
-  Shows all the containers who are running
+```bash
+docker ps
+```  
+**`docker ps`** shows running containers.
 
-- `docker ps -a`  
-  Shows all the containers (-a = --all)
+```bash
+docker ps -a
+```  
+**`docker ps -a`** shows all containers, including stopped ones.
 
-- `docker ps -a -f "status=exited"`  
-  Shows all the containers who are not running (-f = --filter)
+```bash
+docker ps -a -f "status=exited"
+```  
+**`docker ps -a -f`** filters and shows only exited (stopped) containers.
 
-- `docker rename <old> <new>`  
-  To Rename a Container
+```bash
+docker rename <old> <new>
+```  
+**`docker rename`** renames a container.
 
-- `docker system prune`  
-  Removes all stopped containers, unused images, volumes, networks
+```bash
+docker system prune
+```  
+**`docker system prune`** removes all unused containers, images, volumes, and networks.
 
-- `docker image prune`  
-  Removes all the <none> images
+```bash
+docker image prune
+```  
+**`docker image prune`** removes dangling images (`<none>`).
 
-- `docker container prune`  
-  Removes all the unrunning containers
+```bash
+docker container prune
+```  
+**`docker container prune`** removes all stopped containers.
 
-- `docker exec -it <ID> sh`  
-  To enter the terminal of the container (i = --interactive, t = --terminal)
+```bash
+docker exec -it <ID> sh
+```  
+**`docker exec -it`** lets you enter the container's terminal (`-i` interactive, `-t` terminal).
 
-- `docker rmi $(docker images -q)`  
-  Removes all the images by ID
+```bash
+docker rmi $(docker images -q)
+```  
+**`docker rmi`** removes all Docker images by ID.

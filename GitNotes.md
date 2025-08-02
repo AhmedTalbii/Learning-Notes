@@ -1,22 +1,37 @@
+
 ## Git Notes
 
-- `git cherry-pick <commit>`  
-  applies a specific commit from another branch into your current branch.
+```bash
+git cherry-pick <commit>
+```  
+**`git cherry-pick`** applies a specific commit from another branch into your current branch.
 
-- `git stash`  
-  Saves your uncommitted changes and cleans your working directory. Useful when switching branches without committing.
+```bash
+git stash
+```  
+**`git stash`** saves your uncommitted changes and cleans your working directory. Useful when switching branches without committing.
 
-- `git stash apply`  
-  Reapplies the latest stashed changes without removing them from the stash list.
+```bash
+git stash apply
+```  
+**`git stash apply`** reapplies the latest stashed changes without removing them from the stash list.
 
-- `git stash pop`  
-  Reapplies the latest stash and removes it from the stash list.
+```bash
+git stash pop
+```  
+**`git stash pop`** reapplies the latest stash and removes it from the stash list.
 
-- `git stash list`  
-  Shows all stashed changes.
+```bash
+git stash list
+```  
+**`git stash list`** shows all stashed changes.
 
-- `git stash drop <stash@{n}>`  
-  Deletes a specific stash entry.
+```bash
+git stash drop <stash@{n}>
+```  
+**`git stash drop`** deletes a specific stash entry.
 
-- `git stash clear`  
-  Deletes all stash entries.
+```bash
+git stash clear
+```  
+**`git stash clear`** deletes all stash entries.
