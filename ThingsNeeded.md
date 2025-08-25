@@ -3,7 +3,7 @@
 ```
 git remote set-url origin <new_url>
 git config --global user.name "AhmedTalbii"
-git config --global user.email "ahmedtalbi459@example.com"
+git config --global user.email "ahmedtalbi459@gmail.com"
 ```
 ## Gitea :
 ```
