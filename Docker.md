@@ -69,3 +69,8 @@ docker rmi $(docker images -q)
 docker inspect <image>
 ```
 **`docker inspect`** To see all the meta data for the image.
+
+```bash
+ENV VARIABLE_NAME = value
+```
+**`ENV VARIABLE_NAME = value`** To put envirment variables inside the Docker file.
