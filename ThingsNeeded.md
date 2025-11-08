@@ -19,12 +19,3 @@ git add .
 git commit -m ""
 git push
 ```
-diffing algorithm
-ssr
-signals vs states
-rpc
-rate limiter
-orm + redis + postgress
-supabase
-mime types
-offset
