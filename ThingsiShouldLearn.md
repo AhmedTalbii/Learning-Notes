@@ -17,10 +17,10 @@
 - SSR  
 - Signals vs States  
 - RPC  
-- Rate Limiter  
 - ORM + Redis + PostgreSQL  
 - Supabase  
 - MIME Types  
-- Offset  
-- Dependency Injection  
 - How to Test Your Own App Well  
+- WebHooks
+- Payment integration
+- Irv call making
